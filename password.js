@@ -1,7 +1,7 @@
 "use strict";
 $(document).ready(function() {
     let start, stop, char;
-    let password = "";
+
 
     let getRandomNumber = function(max) {
         let random;
@@ -23,6 +23,7 @@ $(document).ready(function() {
             alert("Number of characters must be a number.");
         }
         else{
+            let password = "";
             for (let i = 0; i < userNumberEntered; i++){
                 start = getRandomNumber(chars.length);
                 stop = start + 1;
